@@ -2,7 +2,7 @@
 #define USUARIO_H
 
 #include "usuario.h"
-//#include "bitacora.h"
+#include "bitacora.h"
 #include <iostream>
 #include <fstream>
 #include <stdlib.h>

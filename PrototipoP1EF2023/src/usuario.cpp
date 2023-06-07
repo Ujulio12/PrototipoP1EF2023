@@ -1,4 +1,5 @@
 #include "usuario.h"
+#include "bitacora.h"
 #include <iostream>
 #include <fstream>
 #include <stdlib.h>
@@ -13,7 +14,8 @@
 #define INTENTOS 3
 
 using namespace std;
-
+string codigo;
+bitacora bit;
 void usuario::menuAdministrador()
 {
     int Opciones;
@@ -159,9 +161,9 @@ void usuario::insertarAdministrador()
         std::cout << "================================================================" << std::endl;
         std::cout << "||  Haz fallado 3 veces, no puedes acceder al sistema. ADIOS  ||" << std::endl;
         std::cout << "================================================================" << std::endl;
-       /* codigo="7000";
+       codigo="7000";
         bitacora bit;
-        bit.ingreso(nameAdministrador,codigo);*/
+        bit.ingreso(nameAdministrador,codigo);
     }
 
     else
@@ -212,8 +214,8 @@ void usuario::insertarAdministrador()
         menuAlumno();
 		break;
     case 2:
-
-		break;
+        bit.desplegarBitacora(nameAdministrador,"7500");
+        break;
     case 3:
 
 		break;
@@ -256,9 +258,9 @@ void usuario::menuAlumno()
     cout << "                                                                                           "<< endl;
 	system("pause");
 	system("cls");
-/*	bitacora bit;
+    bitacora bit;
 	codigo="7300";
-	bit.ingreso(nameAdministrador,codigo);*/
+	bit.ingreso(nameAdministrador,codigo);
     cout << "" << endl;
     cout << "\t\t    Nombre Administrador: " << nameAdministrador << endl;
     cout << "" << endl;
@@ -328,9 +330,9 @@ void usuario::menuAlumno()
                 break;
 	case 7:
 	    system("cls");
-	  /*  bitacora bit;
+	    bitacora bit;
         codigo="7999";
-        bit.ingreso(nameAdministrador,codigo);*/
+        bit.ingreso(nameAdministrador,codigo);
         cout << "\t\t\tNombre Administrador: " << nameAdministrador << endl;
         cout << "" << endl;
 	    cout << "          __^__                                     __^__"<< endl;
@@ -379,9 +381,9 @@ void usuario::insertarAlumno()
         jornada="Matutina";
         file.open("Matutina.txt", ios::app | ios::out);
         file << std::left << std::setw(14) << ID << std::left << std::setw(12) << name << std::left << std::setw(32) << correo << std::left << std::left << std::setw(20)<< jornada << std::setw(15)<< telefono << endl;
-      /*  bitacora bit;
+        bitacora bit;
         codigo="7301";
-        bit.ingreso(nameAdministrador,codigo);*/
+        bit.ingreso(nameAdministrador,codigo);
         file.close();
     }
     if (jornada=="V")
@@ -389,16 +391,16 @@ void usuario::insertarAlumno()
         jornada="Vespertina";
         file.open("Vespertina.txt", ios::app | ios::out);
         file << std::left << std::setw(14) << ID << std::left << std::setw(12) << name << std::left << std::setw(32) << correo << std::left << std::left << std::setw(20)<< jornada << std::setw(15)<< telefono << endl;
-/*        bitacora bit;
+        bitacora bit;
         codigo="7301";
-        bit.ingreso(nameAdministrador,codigo);*/
+        bit.ingreso(nameAdministrador,codigo);
         file.close();
     }
     file.open("Alumnos.txt", ios::app | ios::out);
         file << std::left << std::setw(14) << ID << std::left << std::setw(12) << name << std::left << std::setw(32) << correo << std::left << std::left << std::setw(20)<< jornada << std::setw(15)<< telefono << endl;
-	/*bitacora bit;
+	bitacora bit;
 	codigo="7301";
-	bit.ingreso(nameAdministrador,codigo);*/
+	bit.ingreso(nameAdministrador,codigo);
 	file.close();
 }
 void usuario::desplegarAlumno()
@@ -439,9 +441,9 @@ void usuario::desplegarAlumno()
 		}
 	}
 	file.close();
-    /*bitacora bit;
+    bitacora bit;
 	codigo="7302";
-	bit.ingreso(nameAdministrador,codigo);*/
+	bit.ingreso(nameAdministrador,codigo);
 }
 void usuario::modificarAlumno()
 {
@@ -491,9 +493,9 @@ void usuario::modificarAlumno()
 		file.close();
 		remove("Alumnos.txt");
 		rename("Record.txt","Alumnos.txt");
-        /*bitacora bit;
+        bitacora bit;
         codigo="7303";
-        bit.ingreso(nameAdministrador,codigo);*/
+        bit.ingreso(nameAdministrador,codigo);
 	}
 }
 void usuario::buscarAlumno()
@@ -544,9 +546,9 @@ void usuario::buscarAlumno()
 			cout<<"\n\t\t\t Alumno no encontrado...";
 		}
 		file.close();
-		/*bitacora bit;
+		bitacora bit;
         codigo="7304";
-        bit.ingreso(nameAdministrador,codigo);*/
+        bit.ingreso(nameAdministrador,codigo);
 	}
 }
 void usuario::borrarAlumno()
@@ -590,8 +592,8 @@ void usuario::borrarAlumno()
 		file.close();
 		remove("Alumnos.txt");
 		rename("Record.txt","Alumnos.txt");
-        /*bitacora bit;
+        bitacora bit;
         codigo="7304";
-        bit.ingreso(nameAdministrador,codigo);*/
+        bit.ingreso(nameAdministrador,codigo);
 	}
 }

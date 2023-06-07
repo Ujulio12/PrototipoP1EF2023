@@ -11,7 +11,33 @@
 	<vector>
 	<chrono>
 
-1686158343 c:\jemr\prototipop1ef2023\prototipop1ef2023\include\usuario.h
+1686161120 c:\jemr\prototipop1ef2023\prototipop1ef2023\include\usuario.h
+	"usuario.h"
+	"bitacora.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<string>
+	<vector>
+	<chrono>
+
+1686161120 source:c:\jemr\prototipop1ef2023\prototipop1ef2023\src\usuario.cpp
+	"usuario.h"
+	"bitacora.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<string>
+	<vector>
+	<chrono>
+
+1686161120 c:\jemr\prototipop1ef2023\prototipop1ef2023\include\bitacora.h
 	"usuario.h"
 	<iostream>
 	<fstream>
@@ -23,8 +49,8 @@
 	<vector>
 	<chrono>
 
-1686159683 source:c:\jemr\prototipop1ef2023\prototipop1ef2023\src\usuario.cpp
-	"usuario.h"
+1686161172 source:c:\jemr\prototipop1ef2023\prototipop1ef2023\src\bitacora.cpp
+	"bitacora.h"
 	<iostream>
 	<fstream>
 	<stdlib.h>
