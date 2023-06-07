@@ -21,20 +21,19 @@ class usuario
 {
 	private:
 		string IDAdministrador,nameAdministrador,passwordAdministrador;
-		string ID,name,password, departamento;
-		int telefono, salario,cantidadHoras, valorHoras, totalHoras;
-		double IGSS, IRTRA, salarioNeto, adelantos;
+		string ID,name,password, jornada, correo;
+		int telefono;
 	public:
 		void menuAdministrador();
 		void insertarAdministrador();
 		void desplegarAdministrador();
 		void buscarAdministrador();
-		void menuTrabajador();
-		void insertarTrabajador();
-		void desplegarTrabajador();
-		void modificarTrabajador();
-		void buscarTrabajador();
-		void borrarTrabajador();
+		void menuAlumno();
+		void insertarAlumno();
+		void desplegarAlumno();
+		void modificarAlumno();
+		void buscarAlumno();
+		void borrarAlumno();
 		void desplegarAplicaciones();
 		void desplegarAdministracion();
 		void desplegarContabilidad();

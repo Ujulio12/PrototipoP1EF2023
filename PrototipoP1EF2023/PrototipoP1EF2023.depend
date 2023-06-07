@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1686155494 source:c:\jemr\prototipop1ef2023\prototipop1ef2023\main.cpp
+	"usuario.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<string>
+	<vector>
+	<chrono>
+
+1686158343 c:\jemr\prototipop1ef2023\prototipop1ef2023\include\usuario.h
+	"usuario.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<string>
+	<vector>
+	<chrono>
+
+1686159683 source:c:\jemr\prototipop1ef2023\prototipop1ef2023\src\usuario.cpp
+	"usuario.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<string>
+	<vector>
+	<chrono>
+
